@@ -376,3 +376,16 @@ const siteMainContainer = document.querySelector(`.main`);
 const siteHeaderElement = siteMainContainer.querySelector(`.main__control`);
 
 render(siteHeaderElement, createSiteMenuTemplate(), `beforeend`);
+render(siteMainContainer, createFilterTemplate(), 'beforeend');
+render(siteMainContainer, createBoardTemplate(), 'beforeend');
+
+const boardElement = siteMainContainer.querySelector(`.board`);
+const taskListElement = boardElement.querySelector(`.board__tasks`);
+
+render(taskListElement, createTaskEditTemplate(), `beforeend`);
+
+render(taskListElement, createTaskTemplate(), `beforeend`);
+render(taskListElement, createTaskTemplate(), `beforeend`);
+render(taskListElement, createTaskTemplate(), `beforeend`);
+
+render(boardElement, createLoadMoreButtonTemplate(), `beforeend`);
