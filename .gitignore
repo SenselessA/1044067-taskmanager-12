@@ -6,3 +6,11 @@
 *.webp binary
 *.woff binary
 *.woff2 binary
+
+.vscode
+
+node_modules
+
+# собранные js-файлы (бандл)
+public/bundle.js
+public/bundle.js.map
